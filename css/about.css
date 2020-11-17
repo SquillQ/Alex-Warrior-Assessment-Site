@@ -47,16 +47,16 @@ body {
     display:grid;
     grid-gap: 5px;
     grid-template-columns: 1;
-    grid-template-rows:300px 300px;
+    grid-template-rows:375px 300px;
     justify-content: center
 }
 
 .grid-right {
     grid-area: 3/2/span 2/span 2;
     display:grid;
-    grid-gap:5px;
+    grid-gap:10px;
     grid-template-columns:1;
-    grid-template-rows:300px 300px;
+    grid-template-rows:375px 300px;
 }
 
 .grid-left-1{
