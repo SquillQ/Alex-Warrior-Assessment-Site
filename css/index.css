@@ -1,0 +1,148 @@
+body {
+    background: #dcdde1;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    color: #2f3640;
+    font-size: 35px;
+}
+
+/*GRID*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows: 150px 100px;
+    grid-auto-rows: 400px;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-gap: 20px 10px;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+
+.grid-header {
+    grid-area: 1 / 1 / span 1 / span 3;
+    justify-self: center;
+    align-self:center;
+}
+
+.grid-nav {
+    grid-area: 2 / 1 / span 1 / span 3;
+    z-index 1
+}
+
+.grid-side {
+    grid-area: 3 / 1 / span 2 / 2;
+    justify-self: center;
+    align-self:center;
+}
+
+.grid-main {
+    grid-area: 3 / 2 / span 2 / span 2;
+    display:grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 260px;
+}
+
+.grid-main-1 {
+    grid-column: 1/span2;
+    grid-row:1;
+    justify-content: center;
+}
+
+.grid-main-2 {
+    grid-column: 1/span 2;
+    grid-row:2;
+}
+
+.grid-footer {
+    grid-area: 5/1/span 1 /span 3;
+}
+
+
+/*TOP SECTION*/
+
+
+.main-title {
+    color: #273c75;
+    font-size: 55px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.header-image {
+    width: 100px;
+    padding-left: 15px;
+}
+
+.navigation-bar {
+    background-color: #325D79;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.navigation-bar li {
+    display: inline;
+    font-size: 35px;
+    padding: 25px;
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #f26627;
+    text-decoration: none;
+}
+
+.content_dropdown {
+    position: relative;
+    display: inline-block;
+    color: #f26627;
+}
+
+.content_dropdown_list {
+    display: none;
+    position: absolute;
+    color: #f26627;
+    background-color: #2f3640;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.content_dropdown:hover .content_dropdown_list {
+    display: block;
+}
+
+
+/*INDEX PAGE*/
+
+
+.box {
+    border: 8px solid #EFEEEE;
+    background: #9bd7d1;
+    margin: 10px;
+    padding: 10px;
+    right: 500px;
+    top: 325px;
+    font-size: 50px;
+}
+
+.laptop-image {
+    width: 550px;
+    height: 700px;
+}
