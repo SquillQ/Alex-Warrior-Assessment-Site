@@ -48,22 +48,20 @@ body {
 }
 
 .grid-main {
-    grid-area: 3 / 2 / span 2 / span 2;
     display:grid;
+    grid-area: 3 / 2 / span 2 / span 2;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 260px;
 }
 
 .grid-main-1 {
-    grid-column: 1/span2;
-    grid-row:1;
-    justify-content: center;
+    grid-area: 1 / 1 / span 2 / span 1;
+    
 }
 
 .grid-main-2 {
-    grid-column: 1/span 2;
-    grid-row:2;
+    grid-area: 2 / 1 / span 1/ span 1;
 }
 
 .grid-footer {
@@ -140,9 +138,11 @@ a:visited {
     right: 500px;
     top: 325px;
     font-size: 50px;
+    text-align: left;
 }
 
 .laptop-image {
     width: 550px;
     height: 700px;
+    display:flex;
 }

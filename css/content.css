@@ -7,6 +7,9 @@ body {
 }
 
 
+ul {
+    list-style-type:none;
+}
 /*GRID*/
 
 
@@ -21,7 +24,7 @@ body {
     display: grid;
     grid-template-columns: 20% 40% 40%;
     grid-template-rows: 150px 100px;
-    grid-auto-rows: 400px;
+    grid-auto-rows: 300px;
     grid-row-gap: 10px;
     grid-column-gap: 20px;
     /*GRID*/
@@ -51,6 +54,14 @@ body {
     grid-area: 3 / 2 / span 4 / span 2;
     padding: 50px;
 }
+
+.grid-labs {
+    grid-area:3/1/span 3/span 3;
+    padding: 75px;
+    text-align: center;
+    line-height: 150px;
+}
+
 
 /*TOP SECTION*/
 
@@ -121,4 +132,15 @@ a:visited {
     margin-left: 40px;
 }
 
-.
+.box {
+    border: 8px solid #EFEEEE;
+    background: #9bd7d1;
+    margin: 10px;
+    padding: 10px;
+    right: 200px;
+    top: 325px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
