@@ -10,38 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="dark">
     <div class="grid-container">
 
-        <div class="grid-item grid-header">
-            <h1 class="main-title">
+        <div class="grid-header">
+            <header class="main-title">
                 Alex Warrior
                 <img src="images/controller.png" class="header-image">
+                <button class="dark-button" type="button" onclick="document.getElementById('dark').style.display='none'"> Try me ;)</button>
+            </header>
+
+        </div>
+
+        <article class=" grid-main">
+
+            <h1 class="box">
+                Alex Warrior's Assessment Website!
             </h1>
-        </div>
+            <p class="box">
+                Use the 'navigation bar' to explore the site.
+                You will find information on HTML5 aswell as
+                lab work that I have completed.
+                My contact information is available in the <a href="contact_page.html">contact</a> tab .
+            </p>
+        </article>
 
-        <div class="grid-item grid-main">
-            <div class="grid-item grid-main-1">
-
-                <h1 class="box">
-                    Alex Warrior's Assessment Website!
-                </h1>
-            </div>
-            <div class="grid-item grid-main-2">
-                <p class="box">
-                    Use the 'navigation bar' to explore the site.
-                    You will find information on HTML5 aswell as
-                    lab work that I have completed.
-                    My contact information is available in the <a href="contact_page.html">contact</a> tab .
-                </p>
-            </div>
-        </div>
-
-        <div class="grid-item grid-side">
+        <div class="grid-side">
             <img src="images/laptop.png" alt="LAPTOP" class="laptop-image">
         </div>
 
-        <div class="grid-item grid-nav">
+        <div class="grid-nav">
             <nav class="navigation-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_page.html">About</a></li>
@@ -51,8 +49,8 @@
                         <nav class="content_dropdown_list">
                             <ul><a href="content_page_html.html"> HTML </a></ul>
                             <ul><a href="content_page_css.html"> CSS </a></ul>
-                            <ul><p> Javascript </p></ul>
-                            <ul><p> HTTP and Security </p></ul>
+                            <ul><a href="content_page_js.html">Javascript </a> </ul>
+                            <ul><a href="content_page_http.html"> HTTP and Security</a></ul>
                         </nav>
                     </nav>
                 </li>
@@ -60,10 +58,11 @@
             </nav>
         </div>
 
-        <div class="grid-item grid-footer">
-            <footer>Footer</footer>
+        <div class="grid-footer">
+            <footer>
+                </footer>
         </div>
-    
+
     </div>
 
 </body>

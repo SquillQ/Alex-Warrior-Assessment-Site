@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Alex Warrior Assesment Site</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alex Warrior" />
+    <meta name="description" content="HTML Task" />
+    <link href="css/content.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="grid-header">
+            <header class="main-title">
+                Alex Warrior
+                <img src="images/controller.png" class="header-image">
+            </header>
+        </div>
+
+        <div class="grid-nav">
+            <nav class="navigation-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_page.html">About</a></li>
+                <li>
+                    <nav class="content_dropdown">
+                        <a href="content_page.html">Content</a>
+                        <nav class="content_dropdown_list">
+                            <ul><a href="content_page_html.html"> HTML </a></ul>
+                            <ul><a href="content_page_css.html"> CSS </a></ul>
+                            <ul><a href="content_page_js.html"> Javascript </a></ul>
+                            <ul><a href="content_page_http.html"> HTTP and Security</a></ul>
+                        </nav>
+                    </nav>
+                </li>
+                <li><a href="contact_page.html">Contact</a></li>
+            </nav>
+        </div>
+
+        <div class="grid-labs">
+            <div class="box">
+                <p> <b>1. What is the Hypertext Transfer Protocol (HTTP):</b> HTTP is a protocol that allows the fetching of resources such as HTML documents. </p>
+                <p> <b>2. Why is HTTP called a <i> stateless protocol?</i> :</b> It is refered to as a 'stateless protocol' as there is no link between two requests being successively carried out on the same connection. </p>
+                <p> <b>3. Describe the three phases of establishing a session using client-server protocols such as HTTP:</b> Firstly, the client establishes a TCP connection. Secondly, the client sends its request and waits for an answer. Finally, the server process the request, sends back its answe and provides a status code and the appropriate data.</p>
+                <p> <b>4. Describe the parameters on a get and post request:</b> On a 'get' request, the browser takes in the requested resource as a parameter. On a 'post' request, the browser takes in the data provided and sends it to the server for a response.</p>
+                <p> <b>5. What are the HTTP response status code and what do the HTTP status codes, 200, and 404 indicate? :</b> HTTP response codes indicate wether a requeset has been completed succeffully or not. The code 200 indicates that the request has been succeeded. Code 404 means the server can not find the requested resource.</p>
+                <p> <b>6. What are HTTP cookies? Give an example: An HTTP cookie is a piece of data that a server sends to the user's web browser. Cookies can be used to ensure that a user stays logged in accross web pages for example. </b></p>
+                <p> <b>7. Why are cookies a security issue? :</b> Cookies are liable to threats as it is data being sent between a server and client that can be intercepted e.g. login authentication. They are also a privicy concern as a webpage may be using cookies to log information about the client accross differnet webpages and start to build up a profile of browsing history or habits.</p>
+                <p> <b>8. Describe session hijacking and XSS:</b> Session hijacking in the process of gaining access to and misusing a user's authenticated session. This may happen by stealing a cookie for an existing session or by fooling the user into setting a cookie with a predetermined session ID. XSS or cross-site scripting is a security explout in which an attacker injects malicious client-side code into website. The victim executes code and allows the attacks to bypass access controls and impersonate users.</p>
+                <p> <b>9. Describe Cross-site request forgery (CSRF):</b>CSRF is an attack that impersonates a trusted user and sends a website unwanted commands. This can be accomplished by including malicious parameters in a URL behind a link that appears to be legitimate.</p>
+                <p> <b>10. What are Cross-site HTTP requests (CORS) and what requests use CORS? :</b> CORS is a mechanism that allows a server to indicate any other domains, schemes, or ports in which a browser should permit loading of resources. An example of requests that use CORS is web fonts. CORS allows a browser to make requests to a server holding a font to be used on that webpage.</p>
+            </div>
+            
+        </div>
+        <div class="grid-footer">
+            <footer> Footer </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
